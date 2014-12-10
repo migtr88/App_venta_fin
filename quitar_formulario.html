@@ -1,0 +1,80 @@
+
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+<title>Página de venta</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type='application/javascript' src='js/eliminaQuery.js'></script>
+<style type="text/css">
+body{
+	padding-left: 11em;
+    font-family: sans-serif;
+    color:black;
+    background-color: #F0D90A
+}
+
+
+h1{
+	font-family: Helvetica;
+	color: red;
+padding-left: 5em;
+}
+	
+#botones{
+	top:center;
+border-bottom-style: solid;
+}
+#forB{
+	top:center;
+}
+
+	ul.categorias{
+	list-style-type: none;
+  		padding:0;
+  		margin: 0;
+  		position: absolute;
+  		top: 2em;
+  		left: 1em;
+  		width: 9em;
+	}
+
+	ul.navbar li {
+  		background: white;
+  		margin: 0.5em 0;
+  		padding: 0.3em;
+  		border-right: 1em solid black }
+  		ul.navbar a {
+  			text-decoration: none }
+  		a:link {
+  			color:blue }
+  		a:visited {
+  			color:blue }
+  		address{
+  			margin-top: 1em;
+  			padding-top: 1em;
+  			border-top: thin dotted }
+</style>
+</head>
+<body>
+  <h1>Elimine una oferta de venta</h1>
+<div id="selecTipo" name="selecTipo"><p>Seleccione el tipo de objeto para eliminar la oferta</br></p>
+<select type="selec-one" id="selecT">
+<option value="l">libros</option>
+<option value="d">discos</option>
+<option value="c">comics</option>
+<option value="p">peliculas</option>
+</select>
+<div id='formulario1'><p>Nombre o título: <input type='text' name='nombre' id='nombre' size='20' /></p>
+<div id='formularioC'><p>Contacto: <input type='text' name='contact' id='contact' size='20'></p>
+
+<div id='agregar'><input type="button" id="botonA" value="Eliminar" class="botones">
+
+<div id='Resultado'>&nbsp;&nbsp;</div>
+<ul>
+<li><a href="/consultar">Objetos a la venta</a>
+<li><a href="/agregar">Colocar objeto a la venta</a></li>
+<li><a href="/borrar">Eliminar objeto a la venta</a></li>
+	</ul>
+<hr>
+</body>
+</html>
