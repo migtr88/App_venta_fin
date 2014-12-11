@@ -10,7 +10,7 @@ var ag=fs.readFileSync('agregar_formulario.html','utf8');
 var menu=fs.readFileSync('menu_principal.html','utf8');
 var borrar=fs.readFileSync('quitar_formulario.html','utf8');
 
-
+<!-- Peticiones GET para obtener los distintos formularios HTML-->
 app.get('/', function (req, res) {
 res.send(menu);
 });
