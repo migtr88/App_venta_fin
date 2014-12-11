@@ -10,6 +10,8 @@ var ag=fs.readFileSync('agregar_formulario.html','utf8');
 var menu=fs.readFileSync('menu_principal.html','utf8');
 var borrar=fs.readFileSync('quitar_formulario.html','utf8');
 
+app.set('port',(process.env.PORT || 8080));
+
 <!-- Peticiones GET para obtener los distintos formularios HTML-->
 app.get('/', function (req, res) {
 res.send(menu);
@@ -283,8 +285,10 @@ if(tipo==='peliculas'){
 
 
 
-	app.listen(8080);
-	console.log('Server running at http://127.0.0.1:8080/');
+app.listen(app.get('port'), function() {
+  console.log("Node app is running at localhost:" + app.get('port'));
+});
+
 
 <!-- Se inicializan algunos datos, para poder hacer consultas -->
 var contInic="Es una novela maravillosa, este ejemplar es de segunda edicion,para más datos contactar.";
