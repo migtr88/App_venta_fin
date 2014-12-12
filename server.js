@@ -5,28 +5,15 @@ var libros= new Object;
 var comics=new Array;
 var discos=new Array;
 var peliculas=new Array;
-var consulta = fs.readFileSync('consultar_formulario.html','utf8');
-var ag=fs.readFileSync('agregar_formulario.html','utf8');
-var menu=fs.readFileSync('menu_principal.html','utf8');
-var borrar=fs.readFileSync('quitar_formulario.html','utf8');
+
+var dir='./public';
+
+app.use(express.static(__dirname + '/public'));
 
 app.set('port',(process.env.PORT || 8080));
 
 <!-- Peticiones GET para obtener los distintos formularios HTML-->
-app.get('/', function (req, res) {
-res.send(menu);
-});
 
-app.get('/agregar', function (req, res) {
-res.send(ag);
-});
-
-app.get('/consultar',function(req,res){
-res.send(consulta);
-});
-app.get('/borrar',function(req,res){
-res.send(borrar);
-});
 
 
 
