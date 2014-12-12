@@ -1,0 +1,27 @@
+{
+ "name": "App_venta_web",
+  "version": "0.1.2",
+  "description": "Aplicacion de venta web de anuncios de venta de libros,peliculas,comics y discos",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    
+    "express": "~4.9.x"
+    
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/migtr88/App_venta_fin"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
